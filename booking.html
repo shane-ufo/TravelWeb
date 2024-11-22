@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Zhi Yi GOH">
+        <meta name="keywords" content="travel, sarawak, sustainable, eco discover">
+        <meta name="description" content="We offer sustainable ecological exploration in Sarawak">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    </head>
+
+    <body class="booking-page">
+        <header>
+            <img src="images/logo/logo.jpg" alt="Eco Discover and Green Trails Logo" width="100" height="100">
+            <h1>Eco Discover and Green Trails</h1>
+
+            <div class="NavigationBar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="travel.html"><i class="fas fa-map-marked-alt"></i> Explore</a></li>
+                        <li><a href="booking.html"><i class="fas fa-book"></i> Booking</a></li>
+                        <li><a href="Feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+                        <li><a href="contact-us.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+
+            <h2>Book A Package</h2>
+
+            <section>
+
+                <div class="booking-form">
+                    <form name="Booking" method="post">
+                        <h3>Booking Details</h3>
+
+                        <div class="Name">
+                            <i class="fas fa-user"></i>
+                            <label for="firstName">First Name</label>
+                            <label for="lastName">Last Name</label>
+                            <div class="name-field">
+                                <input type="text" id="firstName" placeholder="First Name" required>
+                                <input type="text" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="Email">
+                            <i class="fas fa-envelope"></i>
+                            <label for="Email">Email Address</label>
+                            <div class="email-field">
+                                <input type="email" id="Email" placeholder="(johnny@gmail.com)" required>
+                            </div>
+                        </div>
+
+                        <div class="Phone">
+                            <i class="fas fa-phone"></i>
+                            <label for="Phone">Phone Number</label>
+                            <div class="phone-field">
+                                <input type="tel" id="Phone" placeholder="(012-345 6789)" required>
+                            </div>
+                        </div>
+
+                        <div class="Package">
+                            <i class="fas fa-rocket"></i>
+                            <label for="package-select">Choose Package:</label>
+                            <select id="package-select" onchange="updatePackageDetails()" required>
+                                <option value="" data-price="0">-- Select a Package --</option>
+                                <option value="Basic Explorer Package" data-price="35 / per person">Basic Explorer Package</option>
+                                <option value="Couple Travel Package" data-price="70">Couple Travel Package</option>
+                                <option value="Family Adventure Package" data-price="140">Family Adventure Package</option>
+                                <option value="Luxury Retreat Package" data-price="45 / per person">Luxury Retreat Package</option>
+                            </select>
+                            <p>Package: <span id="selected-package">Not Selected</span></p>
+                            <p>Price: RM<span id="price-per-person">0</span></p>
+                        </div>
+
+                        <div class="People">
+                            <i class="fas fa-users"></i>
+                            <label>Number of People</label>
+                            <div class="people-display">
+                                <span id="summary">2 adults · 0 children</span>
+                                <span onclick="togglePopup()">&#x25BC;</span>
+                            </div>
+                        
+                            <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+                        
+                            <div class="popup" id="popup">
+                                <div class="popup-section">
+                                    <label>Adults</label>
+                                    <div class="counter">
+                                        <button type="button" onclick="adjustCount('adults', false)">-</button>
+                                        <input type="number" id="adults" value="2" min="1" readonly>
+                                        <button type="button" onclick="adjustCount('adults', true)">+</button>
+                                    </div>
+                                </div>
+                        
+                                <div class="popup-section">
+                                    <label>Children (Age below 12 years)</label>
+                                    <div class="counter">
+                                        <button type="button" onclick="adjustCount('children', false)">-</button>
+                                        <input type="number" id="children" value="0" min="0" readonly>
+                                        <button type="button" onclick="adjustCount('children', true)">+</button>
+                                    </div>
+                                </div>
+                        
+                                <button type="button" class="done-btn" onclick="confirmSelection()">Done</button>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div class="Date">
+                            <div class="choose-date">
+                                <i class="fas fa-calendar"></i>
+                                <label for="Date">Choose a Date</label>
+                                <div class="date_field">
+                                    <input type="text" id="Date" placeholder="Select Date" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Remark">
+                            <i class="fas fa-pencil"></i>
+                            <label for="Remark">Remark</label>
+                            <textarea name="Remark" id="Remark" rows="3" placeholder="Write something here..."></textarea>
+                        </div>
+
+                        <div class="Transport">
+                            <i class="fas fa-car"></i>
+                            <label for="Transport">Do you need to provide any transportation?</label>
+                            <div class="Transport-check">
+                                <select id="Transport" name="Transport" size="1">
+                                    <optgroup  label="Please select Yes or No">
+                                        <option value="Yes" selected="selected">Yes</option>
+                                        <option value="No">No</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="submit_button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- Flatpickr library for enhanced date picking functionality -->
+                <script src="book.js"></script> <!-- Custom JS file for booking page functionality -->
+            </section>
+        </article>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <a href="about-us.html">Group_1</a> | Last updated: 2024-11-20</p>
+                <p><a href="contact-us.html">Contact Us</a></p>
+                <p>
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </p>
+                <p>Follow us: 
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> <!-- External link -->
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> <!-- External link -->
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <!-- External link -->
+                </p>
+            </div>
+        </footer>
+
+        <script> // Generate from chatgpt
+            // Create the button
+            const button = document.createElement("button");
+            button.textContent = "Login";
+            button.id = "login-button"; // Add the ID for styling
+
+            // Add click functionality
+            button.addEventListener("click", function () {
+            window.location.href = "Login.html";
+            });
+
+            // Append the button to the body
+            document.body.appendChild(button);
+
+        </script>     
+    </body>
+</html>

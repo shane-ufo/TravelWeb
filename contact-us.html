@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Shane Yi Yeong TAN">
+        <meta name="keywords" content="travel, sarawak, sustainable, eco discover">
+        <meta name="description" content="We offer sustainable ecological exploration in Sarawak">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body class="contact-us-page">
+        <header>
+            <img src="images/logo/logo.jpg" alt="Eco Discover and Green Trails Logo" width="100" height="100">
+            <h1>Eco Discover and Green Trails</h1>
+            
+            <div class="NavigationBar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="travel.html"><i class="fas fa-map-marked-alt"></i> Explore</a></li>
+                        <li><a href="booking.html"><i class="fas fa-book"></i> Booking</a></li>
+                        <li><a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+                        <li><a href="contact-us.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="contactus-form">
+                    <form name="Contact_Us" method="post">
+                        <h2>Get in touch</h2>
+            
+                        <div class="form-group">
+                            <div class="label-icon-container">
+                                <i class="fas fa-user"></i>
+                                <label for="firstName">First Name</label>
+                                <label for="lastName">Last Name</label>
+                            </div>
+                            <div class="name-field">
+                                <input type="text" id="firstName" placeholder="First Name" >
+                                <input type="text" id="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <div class="label-icon-container">
+                                <i class="fas fa-envelope"></i>
+                                <label for="Email">Email Address</label>
+                            </div>
+                            <div class="email-field">
+                                <input type="email" id="Email" placeholder="(johnny@gmail.com)" >
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <div class="label-icon-container">
+                                <i class="fas fa-phone"></i>
+                                <label for="Phone">Phone Number</label>
+                            </div>
+                            <div class="phone-field">
+                                <input type="text" id="Phone" placeholder="(012-345 6789)" >
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <div class="label-icon-container">
+                                <i class="fas fa-comment"></i>
+                                <label for="Message">Message</label>
+                            </div>
+                            <textarea id="Message" name="message" rows="4" required></textarea>
+                        </div>
+            
+                        <div class="form-group">
+                            <div class="label-icon-container">
+                                <i class="fas fa-paper-plane"></i>
+                                <label for="Contact-Method">Preferred Contact Method:</label>
+                            </div>
+                            <select id="Contact-Method" name="contact-method">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                            </select>
+                        </div>
+            
+                            <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>
+            </section>
+
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Our Contact Information</p>
+                <div class="contact-boxes">
+                    <div class="box">
+                        <h3>Our Address</h3>
+                        <p>Jalan Simpang Tiga 93350 Kuching, Sarawak, Malaysia</p>
+                        <a href="https://www.google.com/maps/place/...">Location</a>
+                    </div>
+                    <div class="box">
+                        <h3>Our Phone</h3>
+                        <p><a href="tel:+60162448521">+60 162448521</a></p>
+                        <p><a href="tel:+601110991008">+60 1110991008</a></p>
+                        <p><a href="tel:+601116131202">+60 111631202</a></p>
+                    </div>
+                    <div class="box">
+                        <h3>Our Email</h3>
+                        <p><a href="mailto:104396127@students.swinburne.edu.my">104396127</a></p>
+                        <p><a href="mailto:104397683@students.swinburne.edu.my">104397683</a></p>
+                        <p><a href="mailto:104399993@students.swinburne.edu.my">104399993</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; <a href="about-us.html">Group_1</a> | Last updated: 2024-11-20</p>
+                <p><a href="contact-us.html">Contact Us</a></p>
+                <p>
+                    <a href="privacy-policy.html">Privacy Policy</a> | 
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </p>
+                <p>Follow us: 
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> <!-- External link -->
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> <!-- External link -->
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> <!-- External link -->
+                </p>
+            </div>
+        </footer>
+
+        <script> // Generate from chatgpt
+            // Create the button
+            const button = document.createElement("button");
+            button.textContent = "Login";
+            button.id = "login-button"; // Add the ID for styling
+
+            // Add click functionality
+            button.addEventListener("click", function () {
+            window.location.href = "Login.html";
+            });
+
+            // Append the button to the body
+            document.body.appendChild(button);
+
+        </script> 
+    </body>
+</html>

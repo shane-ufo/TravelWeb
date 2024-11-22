@@ -1,0 +1,994 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f8f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(45deg, #4CAF50, #66BB6A);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: #388E3C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth hover effects */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #66BB6A;
+    padding: 0.6rem 1.2rem;
+}
+
+/* login-button.css */
+#login-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #207523;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+    
+#login-button:hover {
+    background-color: #2E7D32;
+}
+/* End of login-button.css */
+
+/*Start of index.css*/
+.indexpage article {
+    margin: 2%;
+}
+
+.indexpage .indextitle {
+    margin: 2% 2%;
+    margin-right: 54%;
+    background-color: rgb(162, 249, 214);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.indexpage .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(181, 209, 192);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.indexpage .container .textcontainer{
+    flex: 1;
+    padding: 20px;
+}
+
+.indexpage .container .textcontainer .titlesection {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.indexpage .container .textcontainer p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.indexpage .container .imagecontainer {
+    flex: 1;
+    text-align: center;
+}
+
+.indexpage .container .imagecontainer img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.indexpage .intro {
+    font-size: 2rem;
+    background-color: rgb(179, 216, 194);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 65%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.indexpage .smallintro {
+    background-color: rgb(179, 216, 194);
+    font-size: 18px;
+    border-radius:10px;
+    padding: 2%;
+}
+
+.indexpage .smalltext {
+    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.indexpage div p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.indexpage div p a:hover {
+    text-decoration: underline;
+ 
+}
+
+/* End of index.css */
+
+/* About Us page CSS*/
+.about-us-page .about-us {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.about-us-page table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 700px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 180px;
+}
+
+.about-us-page table thead tr {
+    background-color: #5db761;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about-us-page table th,
+table td {
+    padding: 12px 15px;
+}
+
+.about-us-page table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.about-us-page table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.about-us-page table tbody tr:last-of-type {
+    border-bottom: 2px solid #4CAF50;
+}
+
+.about-us-page table tbody tr.even-num {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.about-us-page table tr td img{
+    border-radius: 50%;
+    width: 90px;
+}
+/* CSS code reference from https://youtu.be/biI9OFH6Nmg?si=igIzNZin9yCyubYu
+End of About Us page CSS */
+
+/* travel.css */
+.travel-page main {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f4f8f7, #e0f7e4);
+}
+
+.travel-page section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-page section h2 {
+    text-align: center;
+    color: #2E7D32;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.travel-page .tour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.travel-page .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth with a shadow */
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+.travel-page .card:hover {
+    transform: translateY(-5px); /* Slightly lifts the card */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.travel-page .card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.travel-page .card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #388E3C;
+}
+
+.travel-page .card p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.travel-page .explore-section, .popular-destinations {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.travel-page .scroll-gallery {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    gap: 15px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.travel-page .scroll-gallery figure {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.travel-page .scroll-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-page .scroll-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.travel-page .scroll-gallery figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.travel-page .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.travel-page .destinations-grid article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-page .destinations-grid article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.travel-page .destinations-grid h3 {
+    font-size: 1.5rem;
+    color: #005B5C;
+    margin-bottom: 10px;
+}
+
+.travel-page .destinations-grid p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.travel-page article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+}
+
+.travel-page article h3 {
+    margin-bottom: 0.5rem;
+    color: #388E3C;
+}
+
+.travel-page article p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.travel-page .cta-button {
+    display: inline-block;
+    background-color: #388E3C;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.travel-page .cta-button:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05);
+}
+
+.travel-page details {
+    margin-bottom: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-page details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.travel-page .testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.travel-page blockquote {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+}
+
+.travel-page blockquote footer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555;
+}
+
+.travel-page .packages {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.travel-page .packages h2 {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.travel-page .package-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto new rows */
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.travel-page .package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-page .package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.travel-page .package-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.travel-page .package-card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #388E3C;
+}
+
+.travel-page .package-card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.travel-page .package-card .cta-button {
+    background-color: #388E3C;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.travel-page .package-card .cta-button:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05);
+}
+/* End of travel.css */
+
+/* Booking Page CSS */
+.booking-page article h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.booking-page h3 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+.booking-page .booking-form {
+    background-color: #f9fff9;
+    padding: 1.5rem;
+    border: 1px solid #388E3C;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.booking-page input[type="text"],
+.booking-page input[type="email"],
+.booking-page input[type="tel"],
+.booking-page textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.booking-page .Package p {
+    font-weight: bold;
+}
+
+.booking-page .People {
+    margin-top: 10px;
+}
+
+.booking-page .people-display {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    gap: 5px;
+    width: fit-content;
+}
+
+.booking-page .popup {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.booking-page .popup-section {
+    margin-bottom: 15px;
+}
+
+.booking-page .counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.booking-page .counter button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-page .counter input {
+    width: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.booking-page .done-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.booking-page .choose-date {
+    margin-top: 7px;
+}
+
+.booking-page input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.booking-page input[type="submit"]:hover {
+    background-color: #388E3C;
+}
+/* End of booking page CSS */
+
+/*Start of feedback.css*/
+.feedback_form table.MainTable{
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    background-color: #f8fff8;
+    border: 1px solid #388E3C;
+    border-radius: 10px;
+    width: 32%;
+    margin-bottom: 3%;
+
+}
+
+.feedback_form .feedback{
+    text-align: center;
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.feedback_form .table_title{
+    font-size: 25px;
+    background-color:rgb(181, 250, 161) ;
+    text-align: center;
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.feedback_form .feedback_fieldset {
+    border: 0px;
+    margin-top: 20px;
+}
+
+.feedback_form .feedback_input{
+    width: 95%;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+
+}
+
+.feedback_form table {
+    padding: 10px;
+}
+
+.feedback_form .smalltab {
+    border: 5px;
+    background-color: #f8fff8;
+    width: 450px;
+
+}
+
+.feedback_form .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 2%;
+}
+
+
+.feedback_form .button:hover {
+
+    background-color: #388E3C;
+}
+
+.feedback_form .smalltabtittle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    
+    
+}
+/*End of feedback.css*/
+
+/* contact-us.css */
+.contact-us-page main {
+    padding: 2rem;
+}
+
+.contact-us-page section {
+    margin-bottom: 2rem;
+}
+
+.contact-us-page h2 {
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-us-page form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border: 1px solid #388E3C;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-page form .form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact-us-page form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-us-page form .form-group input,
+.contact-us-page form .form-group textarea,
+.contact-us-page form .form-group select {
+    width: 100%;
+    padding: 0.5rem 2rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-us-page form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-us-page form input:focus, textarea:focus, select:focus {
+    border-color: #388E3C;
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+    outline: none;
+}
+
+.contact-us-page form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-us-page form input[type="submit"]:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+.contact-us-page .label-icon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-us-page .label-icon-container i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-us-page .label-icon-container label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-us-page .contact-info {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0fff4;
+    border: 1px solid #d4e9d7;
+    border-radius: 8px;
+}
+
+.contact-us-page .contact-info h2 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.contact-us-page .contact-info p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-us-page .contact-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-us-page .contact-boxes .box {
+    background-color: #ffffff;
+    border: 1px solid #d4e9d7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-page .contact-boxes .box h3 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.contact-us-page .contact-boxes .box p {
+    color: #555;
+}
+
+.contact-us-page .contact-boxes .box a {
+    color: #388E3C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us-page .contact-boxes .box a:hover {
+    text-decoration: underline;
+}
+
+.contact-us-page iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    display: block;
+}
+/* End of contact-us.css */
+
+/* Footer CSS */
+footer {
+    background-color: #388E3C;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #e0f7e4;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+/* End of Footer CSS */
+
+/* login.css */
+.login-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-page{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #e0f7e4, #4CAF50);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-page .form {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-page #heading {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #2E7D32;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.login-page .field {
+    display: flex;
+    align-items: center;
+    background: #f0f7f4;
+    border-radius: 25px;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    box-shadow: inset 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .input-icon {
+    width: 1.5em;
+    height: 1.5em;
+    fill: #2E7D32;
+}
+
+.login-page .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 0.5em;
+    font-size: 1em;
+    color: #333;
+}
+
+.login-page .input-field::placeholder {
+    color: #aaa;
+}
+
+.login-page .btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.login-page .button1, .button2 {
+    flex: 1;
+    padding: 0.6em;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-page .button1 {
+    background-color: #4CAF50;
+}
+
+.login-page .button1:hover {
+    background-color: #388E3C;
+}
+
+.login-page .button2 {
+    background-color: #2E7D32;
+}
+
+.login-page .button2:hover {
+    background-color: #1B5E20;
+}
+
+.login-page .button3 {
+    display: block;
+    margin: 1.5em auto 0;
+    padding: 0.6em 2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #FF7043;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-page .button3:hover {
+    background-color: #D84315;
+}
+/* End of login.css */
